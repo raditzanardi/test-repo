@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantRegisterActivity">
+
+  <TextView
+      android:id="@+id/textViewRestaurantRegistrationTitle"
+      android:layout_width="403dp"
+      android:layout_height="0dp"
+      android:layout_marginTop="4dp"
+      android:layout_marginBottom="124dp"
+      android:text="@string/txtForRestaurantRegistrationTitle"
+      android:textAlignment="center"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/editTextNewRestaurantName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="TextSizeCheck" />
+
+  <EditText
+      android:id="@+id/editTextUserEmailRestaurant"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="28dp"
+      android:layout_marginBottom="492dp"
+      android:autofillHints=""
+      android:ems="10"
+      android:hint="@string/hintTextForUserEmail"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textViewRestaurantRegistrationTitle"
+      tools:ignore="TextFields" />
+
+  <EditText
+      android:id="@+id/editTextRestaurantRegistrationPassword"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="436dp"
+      android:autofillHints=""
+      android:ems="10"
+      android:hint="@string/hintTextForPassword"
+      android:inputType="textPassword"
+      android:minHeight="48dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/editTextUserEmailRestaurant" />
+
+  <EditText
+      android:id="@+id/editTextNewRestaurantName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="380dp"
+      android:ems="10"
+      android:hint="@string/hintTextForRestaurantName"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/editTextRestaurantRegistrationPassword"
+      app:layout_constraintTop_toBottomOf="@+id/textViewRestaurantRegistrationTitle"
+      android:autofillHints="" />
+
+  <EditText
+      android:id="@+id/editTextOwnerRestaurantFirstName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="11dp"
+      android:autofillHints=""
+      android:ems="10"
+      android:hint="@string/hintForFirstNameOwner"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextNewRestaurantName" />
+
+  <EditText
+      android:id="@+id/editTextRestaurantOwnerLastName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="9dp"
+      android:autofillHints=""
+      android:ems="10"
+      android:hint="@string/hintTextForLastNameOwner"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextOwnerRestaurantFirstName" />
+
+  <EditText
+      android:id="@+id/editTextPhoneNumberRestaurantOwner"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:ems="10"
+      android:hint="@string/hintTextForPhoneNumber"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextRestaurantOwnerLastName"
+      android:autofillHints=""
+      tools:ignore="TextFields" />
+
+  <Spinner
+      android:id="@+id/spinnerRestaurantCity"
+      android:layout_width="251dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="80dp"
+      android:layout_marginTop="32dp"
+      android:entries="@array/restaurantSpinnerCitySelectionArray"
+      android:prompt="@string/restaurantRegisterSpinnerCityPrompt"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNumberRestaurantOwner" />
+
+  <TextView
+      android:id="@+id/textViewForCitySelectionTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="63dp"
+      android:layout_marginTop="8dp"
+      android:text="@string/textForCitySelectiontitle"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNumberRestaurantOwner" />
+
+  <EditText
+      android:id="@+id/editTextAddressRestaurantRegister"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="33dp"
+      android:layout_marginTop="6dp"
+      android:ems="10"
+      android:hint="@string/hintTextForAddress"
+      android:inputType="textPersonName"
+      android:minHeight="48dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/spinnerRestaurantCity"
+      android:autofillHints="" />
+
+  <Button
+      android:id="@+id/btnRegisterNewRestaurant"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:text="@string/textForRegisterActivityButton"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

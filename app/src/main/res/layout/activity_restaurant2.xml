@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".restaurant2">
+
+    <TextView
+        android:id="@+id/dishBox"
+        android:layout_width="352dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/box"
+        android:gravity="center_vertical"
+        android:text="@string/dishOne"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minusBtn2"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:background="@drawable/round_button"
+        android:text="@string/minusSign"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.479"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/plusBtn3"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/round_button"
+        android:text="@string/plusSign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dishAmount3"
+        app:layout_constraintTop_toTopOf="@+id/dishBox3"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck"
+        tools:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dishBox2"
+        android:layout_width="352dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="248dp"
+        android:background="@drawable/box"
+        android:gravity="center_vertical"
+        android:text="@string/dishTwo"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plusBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="58dp"
+        android:background="@drawable/round_button"
+        android:text="@string/plusSign"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dishAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dishAmount"
+        app:layout_constraintTop_toTopOf="@+id/dishAmount"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/dishAmount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="258dp"
+        android:layout_marginEnd="26dp"
+        android:text="@string/dishNumber"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plusBtn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <Button
+        android:id="@+id/minusBtn"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round_button"
+        android:text="@string/minusSign"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dishAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dishAmount"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/minusBtn3"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="180dp"
+        android:background="@drawable/round_button"
+        android:text="@string/minusSign"
+        app:layout_constraintBottom_toBottomOf="@+id/dishBox3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dishBox3"
+        app:layout_constraintVertical_bias="0.634"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dishAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="258dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/dishNumber"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dishBox"
+        app:layout_constraintEnd_toEndOf="@+id/dishBox"
+        app:layout_constraintEnd_toStartOf="@+id/plusBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/plusBtn2"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="58dp"
+        android:background="@drawable/round_button"
+        android:text="@string/plusSign"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dishAmount2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/dishBox3"
+        android:layout_width="352dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/box"
+        android:gravity="center_vertical"
+        android:text="@string/dishThree"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/orderBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSpaghetti" />
+
+    <TextView
+        android:id="@+id/dishAmount3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="258dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="188dp"
+        android:text="@string/dishNumber"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plusBtn3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dishBox3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="352dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="63dp"
+        android:checkedButton="@id/pickupRadio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/pickupRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPickup" />
+
+        <RadioButton
+            android:id="@+id/deliveryRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/txtDelivery"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgSpaghetti"
+        android:layout_width="265dp"
+        android:layout_height="103dp"
+        android:layout_marginBottom="422dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/orderBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spaghetti" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

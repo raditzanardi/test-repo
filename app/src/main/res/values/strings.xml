@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Foodster_App_MobileAppDevProject</string>
+    <string name="textForImageView">an Image</string>
+    <string name="hintTextForUserEmail">User Email</string>
+    <string name="hintTextForPassword">Password</string>
+    <string name="textForRegisterActivityButton">Register</string>
+    <string name="textForLoginBotton">Login</string>
+    <string name="textforEnterDetails">Please enter your details</string>
+    <string name="registerSpinnerPrompt">Type of Customer to Register</string>
+    <string name="txtForButtonOfRegistrationType">Confirm Type of Registration</string>
+    <string name="txtForTextViewRegistrationTypeTitle">Please select the type of Registration you need</string>
+    <string name="txtForCustomerRegistrationTitle">Customer Registration: Please provide your details</string>
+    <string name="hintForFirstName">First Name</string>
+    <string name="hintTextForLastName">Last Name</string>
+    <string name="hintForFirstNameOwner">Owner\'s First Name</string>
+    <string name="hintTextForLastNameOwner">Owner\'s Last Name</string>
+    <string name="hintTextForAddress">Address</string>
+    <string name="hintTextForPhoneNumber">Phone Number</string>
+    <string name="txtForRestaurantRegistrationTitle">Restaurant Registration: Please provide your details</string>
+    <string name="hintTextForRestaurantName">New Restaurant Name</string>
+    <string name="restaurantRegisterSpinnerCityPrompt">Select the city of operation</string>
+    <string name="textForCitySelectiontitle">Please Choose the city of operations from the list</string>
+    <string name="txtForRestaurantOpeningActivityTitle">Welcome Restaurant User</string>
+    <string name="txtForCustomerOpeningActivityTitle">Welcome Customer User</string>
+    <string-array name="registerSpinnerArray">
+        <item>Customer</item>
+        <item>Restaurant</item>
+    </string-array>
+    <string-array name="restaurantSpinnerCitySelectionArray">
+        <item>East Vancouver</item>
+        <item>North Vancouver</item>
+        <item>South Vancouver</item>
+        <item>West Vancouver</item>
+        <item>Burnaby</item>
+        <item>New Westminster</item>
+        <item>Richmond</item>
+        <item>Surrey</item>
+    </string-array>
+
+    <string name="description">image of a restaurant</string>
+    <string name="hint">Search</string>
+    <string name="txtAddress">address</string>
+    <string name="dishOne"> Dish 1</string>
+    <string name="plusSign">+</string>
+    <string name="minusSign">-</string>
+    <string name="dishNumber">1</string>
+    <string name="dishTwo"> Dish 2</string>
+    <string name="dishThree"> Dish 3</string>
+    <string name="txtPickup">Pickup</string>
+    <string name="txtDelivery">Delivery</string>
+    <string name="orderBtn">Order</string>
+</resources>
